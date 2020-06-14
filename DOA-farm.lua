@@ -359,7 +359,7 @@ pressE()
 end
 buyC4()
 while countC4() < 2 do 
-wait(30)
+wait(60)
 buyC4()
 end
 pressTAB()
