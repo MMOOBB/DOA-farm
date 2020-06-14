@@ -280,7 +280,7 @@ end
 
 
 function init()
-tp(305,138,-3222) -- Near Bank
+tp(305,130,-3222) -- Near Bank
 tp(364,138,-3222) -- Up Bank
 
 if game.Workspace.StaticEntity.BankSystem:FindFirstChild("Lasers") then
@@ -352,14 +352,14 @@ if tostring(game.Players.LocalPlayer.Team) == "Prisoner" then
 escapePrison()
 end
 tp(-1019,114,-3026) -- City Base
-wait(45)
+wait(60)
 tp(-1061,114,-3003) -- Black Market
 for i=0,3,1 do
 pressE()
 end
 buyC4()
 while countC4() < 2 do 
-wait(60)
+wait(30)
 buyC4()
 end
 pressTAB()
@@ -367,7 +367,7 @@ wait(2)
 pressE()
 if not bankopen and togglefarm then
 wait(180)
-tp(305,138,-3222) -- Near Bank
+tp(305,130,-3222) -- Near Bank
 tp(364,138,-3222) -- Up Bank
 end
 end
